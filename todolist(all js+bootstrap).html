@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            createTodoApp(document.getElementById('TodoLIST'), 'Список завдань', key = 'TodoLIST');
+        });
+    </script>
+    <style>
+        .nav__link {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <select id="Select" onchange="Select_options()">
+    <option value="active">Усі</option>
+    <option value="completed">Зроблені</option>
+  </select>
+    <div class="container" id="TodoLIST">
+    </div>
+    <script src="todo_list.js"></script>
+    <script src="todoitem.js"></script>
+    <script src="completed.js"></script>
+    <script src="todoform.js"></script>
+</body>
+
+</html>
